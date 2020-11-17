@@ -12,7 +12,7 @@ class DeviceFrame(object):
     def _is_white_pixel(rgb_im, x, y):
         return rgb_im.getpixel((x, y)) == (255, 255, 255)
 
-    def _screen_boundaries(self):
+    def screen_boundaries(self):
         rgb_im = self.image.convert('RGB')
         l = r = int(self.image.size[0] / 2)
         u = d = int(self.image.size[1] / 2)
@@ -27,7 +27,7 @@ class DeviceFrame(object):
         return l, u, r+1, d+1
 
     def set_screen_shot(self, screen_shot):
-        boundaries = self._screen_boundaries()
+        boundaries = self.screen_boundaries()
         size = (boundaries[2] - boundaries[0], boundaries[3] - boundaries[1])
         screen_shot = screen_shot.resize(size, Image.ANTIALIAS)
         self.image.paste(screen_shot, boundaries[:2])

@@ -7,7 +7,7 @@ class FramedImage(object):
     """
     Framed image with background, device frame and text
     """
-    def __init__(self, background_name="default.png", output_name="output",
+    def __init__(self, background_name="default.jpg", output_name="output",
                  frame="pixel2xl", screen_shot=None):
         for name in (f"backgrounds/{background_name}", background_name):
             try:
