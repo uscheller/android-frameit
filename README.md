@@ -1,3 +1,5 @@
+![Python application](https://github.com/uscheller/android-frameit/workflows/Python%20application/badge.svg)
+
 # android-frameit
 A tool for rendering a device frame around screenshots with text and a background image. 
 Google [recommends not using framed screenshots in Play Store](https://developer.android.com/distribute/marketing-tools/device-art-generator). 
