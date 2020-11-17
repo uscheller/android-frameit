@@ -24,6 +24,12 @@ Edit the src/frameit.py configuration to match your needs and run it:
 ```shell script
 pipenv run python src/frameit.py <path to screenshots> --background default.jpg
 ```
+So, to convert the example_screenshots which are bundled in this project, you can run
+
+```
+pipenv run python src/frameit.py example_screenshots/ --background default.jpg
+```
+
 
 Here is an example to convert a single screenshot
 
